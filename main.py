@@ -1,5 +1,6 @@
 cars = []
 max_speed = []
+prices = []
 car_description = ['Car: ', 'Speed: ']
 c = 0
 a = 0
@@ -15,12 +16,12 @@ while i > 0:
     cont = input('Do you want to continue: ')
 
     if cont == 'no':
-        while c < len(car_description) * len(cars):
+        while c < len(cars):
             print(car_description[0] + cars[c])
             print(car_description[1] + max_speed[c])
+            print(" ")
             c = c + 1
         break
 
     elif cont == 'yes':
-        a = a + 1
         continue
